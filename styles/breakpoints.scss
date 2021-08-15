@@ -1,11 +1,11 @@
-$xl: 1400px;
-@mixin for-small-up {
-  @media screen and (max-width: $xl) {
-    @content;
-  }
-}
-@mixin for-large-up {
-  @media screen and (min-width: $xl) {
-    @content;
-  }
-}
+// $xl: 1400px;
+// @mixin for-small-up {
+//   @media screen and (max-width: $xl) {
+//     @content;
+//   }
+// }
+// @mixin for-large-up {
+//   @media screen and (min-width: $xl) {
+//     @content;
+//   }
+// }

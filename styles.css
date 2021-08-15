@@ -9,31 +9,93 @@ html {
 }
 
 .page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 1400px) {
-  .page {
-    width: 320px;
-  }
+  width: 100%;
+  overflow-x: hidden;
 }
 
+@media screen and (min-width: 400px) {
+  .page {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header {
-  width: 1140px;
-  height: 62px;
-  margin: auto;
   display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
 }
 
 .navigation {
-  margin-left: auto;
-  margin-top: 7px;
-  margin-right: 75px;
+  display: none;
 }
 
+.header__button {
+  display: none;
+}
+
+.header__menu-button {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  height: 100%;
+  width: 58px;
+  border-left: 1px solid #00000026;
+}
+
+.header__menu-icon {
+  width: 18px;
+  height: 13px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+  display: inline-block;
+}
+
+@media screen and (min-width: 400px) {
+  .header {
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    background-color: transparent;
+  }
+
+  .header__menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
+
+  .top-section {
+    background-color: #f3c6bd;
+    padding-top: 39px;
+  }
+
+  .header__button {
+    display: block;
+  }
+
+  .logo__description {
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+
+  .logo__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+}
 .navigation__item {
   text-decoration: none;
   line-height: 25px;
@@ -63,9 +125,9 @@ html {
 }
 
 .logo__img {
-  width: 60px;
-  height: 60px;
-  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+  margin-right: 13px;
 }
 
 .logo__text {
@@ -81,67 +143,48 @@ html {
 }
 
 .logo__description {
-  font-size: 18px;
-  line-height: 25px;
-  opacity: 0.6;
+  display: none;
 }
 
 .top-section {
   background-color: #f3c6bd;
-  padding-top: 39px;
 }
 
 .headline {
-  position: relative;
-  width: 1140px;
-  margin: auto;
-  margin-top: 84px;
-  display: flex;
-  padding-bottom: 77px;
+  width: 100%;
 }
 
 .headline__content {
-  position: absolute;
-  z-index: 1;
-}
-
-.headline__banner {
-  position: relative;
-  right: -105px;
-  top: 0;
-  width: 796px;
-  height: 448px;
-  margin-left: auto;
+  margin: 35px 15px 33px 15px;
 }
 
 .headline__title {
-  width: 754px;
-  height: 165px;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 78px;
-  letter-spacing: -0.5px;
-  z-index: 1;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.3125px;
   margin: 0;
 }
 
 .headline__description {
-  margin-top: 34px;
-  margin-bottom: 0;
-  width: 456px;
-  height: 102;
+  margin-top: 24px;
   font-size: 24px;
   line-height: 34px;
-  z-index: 1;
+  margin-bottom: 0;
 }
 
-.headline__actions {
-  margin-top: 58px;
-  display: flex;
+.action-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
 }
 
 .headline__learn-more-btn {
-  margin-left: 10px;
   width: 158px;
   height: 48px;
   color: #3040c4;
@@ -150,8 +193,74 @@ html {
   border-radius: 2px;
   border: none;
   background: #fff;
+  margin-top: 15px;
 }
 
+.headline__banner {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 399px) {
+  .headline__action-btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .headline {
+    position: relative;
+    width: 1140px;
+    margin: auto;
+    margin-top: 84px;
+    display: flex;
+    padding-bottom: 77px;
+  }
+
+  .headline__content {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+  }
+
+  .headline__title {
+    width: 754px;
+    height: 165px;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    z-index: 1;
+  }
+
+  .headline__description {
+    margin-top: 34px;
+    margin-bottom: 0;
+    width: 456px;
+    height: 102;
+    font-size: 24px;
+    line-height: 34px;
+    z-index: 1;
+  }
+
+  .headline__actions {
+    margin-top: 58px;
+    display: flex;
+  }
+
+  .headline__learn-more-btn {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .headline__banner {
+    position: relative;
+    right: -105px;
+    top: 0;
+    width: 796px;
+    height: 448px;
+    margin-left: auto;
+  }
+}
 .about {
   width: 100%;
   display: flex;
@@ -377,17 +486,6 @@ html {
 
 .social-links__item {
   margin-left: 20px;
-}
-
-.action-button {
-  width: 160px;
-  height: 48px;
-  background-color: #3040c4;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
-  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

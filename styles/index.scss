@@ -9,16 +9,23 @@ html {
   color: #2b292d;
 }
 .page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  @include for-small-up {
-    width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 400px) {
+  .page {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
+
+//   @include for-small-up {
+//     width: 320px;
+//   }
+// }
 
 @import 'header.scss';
 @import 'headline.scss';
