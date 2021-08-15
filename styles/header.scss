@@ -4,16 +4,7 @@
   margin: auto;
   display: flex;
 }
-.header__button {
-  width: 160px;
-  height: 48px;
-  background-color: #3040c4;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
-  border: none;
-}
+
 .navigation {
   margin-left: auto;
   margin-top: 7px;
@@ -23,8 +14,8 @@
   text-decoration: none;
   line-height: 25px;
   font-size: 18px;
-  color: #2b292d;
   margin-right: 50px;
+  color: #2b292d;
 }
 .navigation__item_selected {
   font-weight: 700;
