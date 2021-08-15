@@ -12,6 +12,8 @@ html {
   width: 1400px;
   margin: auto;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   @include for-small-up {
     width: 320px;
