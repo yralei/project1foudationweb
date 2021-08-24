@@ -1,4 +1,14 @@
 @import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'common.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'tips.scss';
+@import 'audience.scss';
 
 * {
   box-sizing: border-box;
@@ -10,11 +20,8 @@ html {
 }
 .page {
   width: 100%;
-  overflow-x: hidden;
-}
-@media screen and (min-width: 400px) {
-  .page {
-    width: 1400px;
+  @include for-large-up {
+    max-width: 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;
@@ -22,17 +29,5 @@ html {
   }
 }
 
-//   @include for-small-up {
-//     width: 320px;
-//   }
-// }
-
-@import 'header.scss';
-@import 'headline.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
 @import 'order.scss';
-@import 'audiences.scss';
-@import 'footer.scss';
-@import 'common.scss';
+@import 'audience.scss';

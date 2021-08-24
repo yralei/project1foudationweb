@@ -1,0 +1,126 @@
+.audience {
+  max-width: 320px;
+  padding: 50px 15px;
+  background-color: $color-light-blue;
+  @include for-large-up {
+    max-width: 1400px;
+    padding: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    @include for-large-up {
+      margin-top: 108px;
+      font-size: 22px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    @include for-large-up {
+      margin-top: 24px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__text {
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    @include for-large-up {
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 34px;
+      width: 555px;
+      height: 72px;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+  &__actions {
+    @include for-large-up {
+      text-align: center;
+    }
+  }
+  &__learn-more-btn {
+    margin-top: 12px;
+  }
+}
+
+.audience-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  @include for-large-up {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1139px;
+    margin: auto;
+    margin-top: 111px;
+  }
+  &__item {
+    width: 290px;
+    height: 300px;
+    margin: 0;
+    margin-bottom: 15px;
+    background-color: $color-white;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    @include for-large-up {
+      width: 262px;
+      height: 300px;
+    }
+  }
+  &__item-text {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
+  &__item-dev {
+    padding: 22px 76px;
+  }
+  &__item-entert {
+    padding: 22px 74px;
+  }
+  &__item-athl {
+    padding: 22px 65px;
+  }
+  &__item-creat {
+    padding: 22px 100px 22px 71px;
+  }
+  .user_card_hover:hover {
+    background-color: $color-dark-blue;
+    color: $color-white;
+  }
+}
+.customers__audience {
+  @include for-large-up {
+    padding-bottom: 30px;
+  }
+}
