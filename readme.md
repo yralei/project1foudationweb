@@ -4,7 +4,7 @@
 
 ## Quick start
 
-[click this link] ()
+[click this link](https://yralei.github.io/project1foudationweb/)
 
 ###### The teach task is:
 
