@@ -1,12 +1,10 @@
 # Startup Website
 
----
-
 ## Quick start
 
 [click this link](https://yralei.github.io/project1foudationweb/)
 
-###### The teach task is:
+##### The teach task is:
 
 - HTML 5
 - CSS 3
