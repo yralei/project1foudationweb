@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #2b292d;
+}
+
+.page {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  .page {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .action__button {
   width: 160px;
   height: 48px;
@@ -18,26 +41,16 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .hide_desktop {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1399px) {
-  .hide_mobile {
-    display: none;
-  }
-}
-
 .about {
   padding: 46px 15px;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   background-color: #f4f5f7;
 }
 @media screen and (min-width: 1400px) {
   .about {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     padding: 77px 130px 76px 130px;
   }
@@ -72,6 +85,8 @@
 .customers {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1400px) {
   .customers {
@@ -202,7 +217,15 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
   margin-top: auto;
+}
+@media screen and (min-width: 1400px) {
+  .footer {
+    width: 100%;
+  }
 }
 .footer__description {
   display: none;
@@ -227,6 +250,7 @@
 @media screen and (min-width: 1400px) {
   .footer__line {
     margin: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -505,10 +529,13 @@
 }
 
 .top-section {
+  width: 320px;
+  margin: 0 auto;
   background-color: #f3c6bd;
 }
 @media screen and (min-width: 1400px) {
   .top-section {
+    width: 100%;
     padding-top: 39px;
     background-color: #f3c6bd;
   }
@@ -624,6 +651,8 @@
 }
 
 .tips {
+  width: 320px;
+  margin: 0 auto;
   margin-top: 8px;
 }
 @media screen and (min-width: 1400px) {
@@ -676,6 +705,7 @@
 }
 
 .audience {
+  margin: 0 auto;
   max-width: 320px;
   padding: 50px 15px;
   background-color: #00a1c612;
@@ -808,38 +838,18 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  color: #2b292d;
-}
-
-.page {
-  width: 100%;
-}
-@media screen and (min-width: 1400px) {
-  .page {
-    max-width: 1400px;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .order {
+  width: 320px;
+  margin: 0 auto;
   padding: 50px 15px;
-  background-color: #fff;
+  background-color: #f4f5f7;
 }
 @media screen and (min-width: 1400px) {
   .order {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
     padding: 73px 0 72px 0;
   }
 }
@@ -920,6 +930,7 @@ html {
 }
 
 .audience {
+  margin: 0 auto;
   max-width: 320px;
   padding: 50px 15px;
   background-color: #00a1c612;

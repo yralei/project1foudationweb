@@ -1,11 +1,14 @@
 .order {
+  width: 320px;
+  margin: 0 auto;
   padding: 50px 15px;
-  background-color: $color-white;
+  background-color: $color-light;
 
   @include for-large-up {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
     padding: 73px 0 72px 0;
   }
   &__details {

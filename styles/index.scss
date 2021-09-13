@@ -1,14 +1,4 @@
 @import 'breakpoints.scss';
-@import 'variables.scss';
-@import 'common.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'footer.scss';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'tips.scss';
-@import 'audience.scss';
 
 * {
   box-sizing: border-box;
@@ -28,6 +18,16 @@ html {
     flex-direction: column;
   }
 }
-
+@import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'common.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'tips.scss';
+@import 'audience.scss';
 @import 'order.scss';
 @import 'audience.scss';

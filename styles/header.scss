@@ -97,8 +97,11 @@
 }
 
 .top-section {
+  width: 320px;
+  margin: 0 auto;
   background-color: #f3c6bd;
   @include for-large-up {
+    width: 100%;
     padding-top: 39px;
     background-color: #f3c6bd;
   }

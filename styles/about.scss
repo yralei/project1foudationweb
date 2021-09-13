@@ -1,9 +1,11 @@
 .about {
   padding: 46px 15px;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   background-color: $color-light;
   @include for-large-up {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     padding: 77px 130px 76px 130px;
   }
