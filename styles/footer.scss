@@ -16,6 +16,7 @@
     color: $text-color-light-grey;
     @include for-large-up {
       display: block;
+      color: $text-color-light-grey;
     }
   }
   &__line {
@@ -165,4 +166,9 @@
       display: block;
     }
   }
+}
+.footer-logo-descr {
+  font-size: 18px;
+  line-height: 25px;
+  color: $text-color-light-grey;
 }
